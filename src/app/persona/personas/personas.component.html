@@ -1,0 +1,18 @@
+<table class="table-fill">
+  <thead>
+    <tr>
+      <th class="text-left">Nombres</th>
+      <th class="text-left">Apellidos</th>
+      <th class="text-left">Edad</th>
+      <th class="text-left">Clasificación</th>
+    </tr>
+  </thead>
+  <tbody class="table-hover">
+    <tr *ngFor="let persona of personas">
+      <td class="text-left">{{ persona.name }}</td>
+      <td class="text-left">{{ persona.surname }}</td>
+      <td class="text-left">{{ persona.age }}</td>
+      <td class="text-left">{{ clasification(persona.age) }}</td>
+    </tr>
+  </tbody>
+</table>

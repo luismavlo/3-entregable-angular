@@ -1,0 +1,12 @@
+<h1>Personas</h1>
+<div class="container">
+    <app-agregar
+    [newPerson] = "newPerson"
+    (outNewPerson)="addNewPerson( $event )"
+></app-agregar>
+</div>
+
+
+<app-personas
+    [personas] = "personas"
+></app-personas>

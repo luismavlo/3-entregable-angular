@@ -1,0 +1,20 @@
+<form (ngSubmit)="agregar()">
+    <div class="content-input">
+        <label for="name">Nombres</label>
+        <input type="text" name="name" id="name" [(ngModel)]="newPerson.name">
+    </div>
+
+    <div class="content-input">
+        <label for="surname">Apellidos</label>
+        <input type="text" name="surname" id="surname" [(ngModel)]="newPerson.surname"> 
+    </div>
+
+    <div class="content-input">
+        <label for="age">Edad:</label>
+        <input type="number" name="age" id="age" [(ngModel)]="newPerson.age">
+    </div>
+
+    <input type="submit" value="Agregar">
+    
+    
+</form>
